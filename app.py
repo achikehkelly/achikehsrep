@@ -1,3 +1,4 @@
+import pandas as pd
 import scipy.stats
 import streamlit as st
 import time
@@ -9,7 +10,7 @@ chart = st.line_chart([0.5])
 
 def toss_coin(n):
 
-    trial_outcomes = scipy.stats.bernuoulli.rvs(p=0.5, size=n)
+    trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
 
     mean = None
     outcome_no = 0
